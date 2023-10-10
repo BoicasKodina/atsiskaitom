@@ -109,7 +109,8 @@ nav ul li a {
 }
 
 .quick-view {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
   margin: 0 auto;
@@ -126,8 +127,7 @@ nav ul li a {
 }
 
 .left-picture {
-  max-width: 50%; /* Use relative units for responsiveness */
-  width: 100%; /* Ensure that the image takes up 100% of its container */
+  max-width: 50%; 
   height: 600px;
   object-fit: cover;
   min-width: 300px;
@@ -195,8 +195,8 @@ nav ul li a {
 }
 
 .shop-image-wrap {
-  min-height: 350px;
-  min-width: 350px;
+  max-height: 450px;
+  max-width: 450px;
 }
 
 .shop-item-image {
@@ -407,6 +407,7 @@ nav ul li a {
 .picture-container {
   position: relative;
   display: inline-block;
+  max-width: 70%;
 }
 
 .hover-button {
